@@ -16,6 +16,7 @@ h1{
     font-size: 22px;
     text-align: center;
     text-decoration: underline;
+    
 }
 
 h2{
@@ -26,7 +27,9 @@ h2{
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline;
-}
+    padding: 0;
+    display: inline-block;
+} 
 
 .Comments{
     color: #000000;
