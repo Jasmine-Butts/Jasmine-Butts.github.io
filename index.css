@@ -1,0 +1,50 @@
+header{
+    background-color: rgb(141, 120, 120);
+    font-style: oblique;
+    color: #251414;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+body{
+    background-color: rgb(177, 160, 160);
+    margin:0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.section{
+    width: 50%;
+    margin: 0 10px;
+    margin-top: 25px;
+    padding: 20px;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(160, 129, 129);
+
+}
+
+
+
+
+
