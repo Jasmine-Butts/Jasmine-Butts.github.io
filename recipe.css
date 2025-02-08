@@ -1,6 +1,8 @@
 
 body{
     background-image: url('silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
     font-size: 11px;
     font-family: 'Georgia';
 }
@@ -33,7 +35,7 @@ h2{
 
 .Comments{
     color: #000000;
-    background: #fcfc017c;
+    background: #f0f03579;
     font-size: 14px;
     font-family: 'Georgia';
     font-style: italic;
