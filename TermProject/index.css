@@ -1,0 +1,134 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;  
+    margin: 0;
+    padding: 0;
+    background-color: #9b4922; 
+    color: #333; 
+
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin: 0%;
+    
+
+}
+
+h3 {
+    font-size: 15px;
+    color: #e5be8a;
+    text-align: center;
+    margin-top: 0%;
+}
+
+header {
+    background-color: #9b4922;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:#e5be8a
+}
+
+nav ul {
+    font-size: 19px;;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; 
+    justify-content: space-evenly;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+}
+nav a:hover {
+    color: #070707; 
+}
+
+main {
+    padding: 20px;
+    border-top: 1px solid #fff;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center; 
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px #fff;
+    margin-right: 5px;
+    border-radius: 4px;
+    background-color: #e5be8a8f;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: rgba(51, 25, 4, 0.582);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-account{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+}
+
+#container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.featured {
+    flex: 1; 
+    width: 135px;
+    height: 145px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #e5be8a;
+    border-radius: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 30px 50px -12px rgba(8, 3, 1, 0.35)  inset, 
+    0px 18px 26px -18px rgba(50, 50, 93, 0.4)  inset;
+
+}
+
+footer {
+    text-align: center;
+    color:#fff;
+    padding: 1em 0;
+    background-color: #9b4922;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #fff;
+}
