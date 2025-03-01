@@ -1,0 +1,97 @@
+<!--
+    Filename: admin-upload.html
+    Author: Jasmine Butts
+    Date: February 28 2025
+    Description: This HTML page provides an interface for admin users to upload bulk product data into the app database.
+                 It allows the user to select a file in JSON (or other accepted formats such as CSV or text) to upload.
+                 - Includes a file input field for the user to select a file
+                 - Submit button to trigger file upload
+                 - Displays an example file format to guide the user on the structure of the data
+                 - Instructions for supported file types and format requirements
+    Notes: Ensure that the form validates the file type before submission and displays relevant error messages if necessary.
+           The page should also include clear instructions on the file format and type accepted.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin-upload.js" defer></script>
+</head>
+<body>
+  <section id="container1">
+    <header>
+      <h1>Admin Bulk Upload Page</h1>
+
+      <nav>
+        <a href="/admin/admin-upload.html"> Bulk Upload</a>
+        <a href="/admin/product-edit.html"> Product Edit</a>
+        <a href="/admin/admin-products.html"> Product List</a>
+        <a href="" id="signout">Sign Out</a>
+
+    </nav>
+
+    </header>  
+
+    <p id="welcome">Welcome, Admin! Use the form below to upload bulk product data into the app database.</p>
+
+    <section id="upload">
+
+      <div id="file-upload">
+        
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <label for="file-upload">Select file to upload:</label>
+          <input type="file" id="file-upload" name="file" accept=".json,.csv,.txt" required>
+          
+          <button type="submit">Upload File</button>
+        </form>
+
+      </div>
+        
+      <div id="example">
+
+       <h2 class="example">File Format Example</h2> 
+        <pre>
+{
+  "products": [
+      {
+        "id": "123",
+        "name": "Sample Product",
+        "price": "29.99",
+        "description": "Sample description..."
+      },
+        
+      {
+        "id": "124",
+        "name": "Another Product",
+        "price": "19.99",
+        "description": "Sample description..."
+      }
+  ]
+}
+        </pre>
+
+              </section>
+          
+              <section>
+                  <h2>Accepted File Formats</h2>
+                  <ul>
+                      <li>JSON (.json)</li>
+                      <li>CSV (.csv)</li>
+                      <li>Text files (.txt)</li>
+                  </ul>
+                  <p>Please ensure your file follows the correct format before uploading.</p>
+              </section>
+
+        <button>Submit</button>
+
+      </div>
+
+    </section>
+
+  </section>
+</body>
+</html>

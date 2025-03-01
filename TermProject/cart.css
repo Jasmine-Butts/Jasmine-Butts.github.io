@@ -1,0 +1,203 @@
+/*
+    Filename: cart.css
+    Author: Jasmine Butts
+    Date: February 28 2025
+    Description: This CSS file contains styles for the shopping cart page.
+                 It ensures a clean layout for the cart, styling:
+                 - Cart item list (image, name, price, quantity, remove button)
+                 - Cart total calculation display
+                 - Checkout button styling
+                 - Responsive adjustments for different screen sizes
+    Notes: Follow class coding guidelines and use appropriate class and ID selectors.
+*/
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;  
+    margin: 0;
+    padding: 0;
+    background-color: #9b4922; 
+    color: #333; 
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin: 0%;
+}
+
+
+h3 {
+    font-size: 15px;
+    color: #e5be8a;
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+header {
+    background-color: #9b4922;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:#e5be8a
+}
+
+
+nav ul {
+    font-size: 19px;;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; 
+    justify-content: space-evenly;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+nav a:hover {
+    color: #070707; 
+}
+
+
+#cart {
+    display: flex;
+    flex-direction: row;
+    color:#fff;
+    margin: 25px;
+}
+
+
+#left {
+    flex: 75%;
+}
+
+#left h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5be8a;
+}
+
+
+#itemList {
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px
+}
+
+
+.item {
+    display: flex;
+    border-bottom: 1px solid #e5be8a;
+}
+
+.itemImg {
+    flex: 1;
+    padding-top:15px;
+}
+
+
+.itemInfo {
+    flex: 1;
+}
+
+.name
+
+.itemPrice {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.counter input {
+    width: 25px;
+    text-align: center;
+    background-color: #f5e0d7;
+
+}
+
+.itemPrice button {
+    background-color: transparent;
+    border: none;
+}
+
+.counter button {
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    background-color: #a1a0a06b;
+
+}
+
+.counter button:hover {
+    background-color: #a1a0a0;
+}
+
+
+#right {
+    display: flex;
+    background-color: #50200a59; 
+    flex: 25%;
+    padding: 20px;
+    padding-bottom: 80px;
+    flex-direction: column;
+    border: 1px solid #e5be8a;
+}
+
+
+.summary{
+    flex: 1;
+    font-size:20px;
+    text-align: center;
+    align-content: center;
+    border-bottom: 1px solid #e5be8a;
+}
+
+
+.total {
+    flex: 1;
+    align-content: center;
+}
+
+
+.total #tax {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5be8a;
+}
+
+.total #total {
+    font-size:20px;
+}
+
+#checkout {
+    width: fit-content;
+    padding: 10px;
+    background-color: #4a1800;
+    color:#fff
+
+}

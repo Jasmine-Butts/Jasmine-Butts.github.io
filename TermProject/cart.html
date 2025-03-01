@@ -1,0 +1,159 @@
+<!--
+    Filename: cart.html
+    Author: Jasmine Butts
+    Date: February 28 2025
+    Description: This page displays the shopping cart for the user, listing items added to their cart. 
+                 It includes item details such as image, name, price, quantity, and remove button.
+                 Additionally, it calculates the total price, including tax, delivery fees, and service fees if applicable.
+                 The page also provides a checkout button for users to proceed with their purchase.
+    Notes: This is a static prototype for Milestone 2 and does not yet include backend functionality.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <pre class="logo">LUX HAVEN</pre>
+
+        <div class = "search-bar">
+            <input type="text" placeholder="Search Products...">
+            <button>Search</button>
+         </div>
+
+        <div class="cart-account">
+            <img src="images/bag.png" 
+            alt="Shopping bag" width="40" height="40">
+            <img src="images/pprofile.png" alt="Profile Icon"
+             width="50" height="50">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+             <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/admin/admin-products.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <section id="cart">
+
+        <section id="left">
+            <h4>Your Bag</h4>
+            
+            <div id="itemList"> 
+
+                <div class="item">
+                    <div class="itemImg">
+                        <img src="/images/ring.png" alt="Diamond Knot Ring" width="150" height="100%"
+                        productID="LH0001" name="Dia Knot Ring" category="Ring" price="75.00">
+                    </div>
+
+                    <div class="itemInfo">
+                        <p class="name">Dia Knot Ring</p>
+                        <p class="productID">Product ID: LH0001</p>                        
+                    </div>
+
+                    <div class="itemPrice">
+                       <p class="price">$75.00</p>
+                        
+                        <div class="counter">
+                            <button class="decrease">-</button>
+                            <input type="text" class="quanitity" value="1">
+                            <button class="decrease">+</button>
+                        </div>
+
+                        <button class="remove">
+                            <img src="/images/remove.png" alt="Remove" width="15" height="100%">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="itemImg">
+                        <img src="/images/neck3.png" alt="Pearly Perf Necklace" width="150" height="100%"
+                        productID="LH0005" name="Pearly Perf" category="Necklace" price="85.00">
+                    </div>
+
+                    <div class="itemInfo">
+                        <p class="name">Pearly Perf</p>
+                        <p class="productID">Product ID: LH0005</p>                        
+                    </div>
+
+                    <div class="itemPrice">
+                        <p class="price">$50.00</p>
+                        
+                        <div class="counter">
+                            <button class="decrease">-</button>
+                            <input type="text" class="quanitity" value="1">
+                            <button class="decrease">+</button>
+                        </div>
+
+                        <button class="remove">
+                            <img src="/images/remove.png" alt="Remove" width="15px" height="100%">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="itemImg">
+                        <img src="/images/earring2 (1).png" alt="High Tide Earring" width="150" height="100%"
+                        productID="LH0008" name="High Tide Earrings" category="Earrings" price="45.00">
+                    </div>
+
+                    <div class="itemInfo">
+                        <p class="name">High Tide</p>
+                        <p class="productID">Product ID: LH0008</p>                        
+                    </div>
+
+                    <div class="itemPrice">
+                        <p class="price">$45.00</p>
+                                   
+                        <div class="counter">
+                            <button class="decrease">-</button>
+                            <input type="text" class="quanitity" value="1">
+                            <button class="increase">+</button>
+                        </div>
+
+                        <button class="remove">
+                            <img src="/images/remove.png" alt="Remove" width="15" height="auto">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+
+        <section id="right">
+            
+            <div class="summary"> 
+                <p>ORDER SUMMARY</p>
+            </div>
+
+            <div class="total">
+                <p id="subtotal">Subtotal: $ </p>
+                <p id="tax">Estimated Tax:  $ </p>
+                <p id="total">Total: </p>
+
+                <button id="checkout">CHECKOUT</button>
+            </div>
+        </section>
+
+
+    </section>
+    
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!--
+    Filename: admin-products.html
+    Author: Jasmine Butts
+    Date: February 28 2025
+    Description: This HTML page provides an interface for admin users to manage products in the system.
+                 - Displays a list of all available products with key attributes.
+                 - Allows filtering/searching by product name or category.
+                 - Includes admin actions: Edit, Delete, Archive.
+                 - Provides an option to create/add a new product.
+                 - Each product includes attributes such as:
+                   - Product ID (not editable)
+                   - Name
+                   - Description
+                   - Category ID or Name
+                   - Image Path
+                   - Price
+    Notes: Ensure the page has a responsive layout and that all admin actions are properly secured to prevent unauthorized modifications.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin-products.js" defer></script>
+</head>
+<body>
+    
+    <section id="container1">
+        <section id="header">       
+        
+            <div class="admin">
+                <a class="logo" href="/index.html" alt="Home">
+                <img src="/images/logo.jpg" width="150" height="auto">
+                </a>
+            
+                <h1 id="listing-title">Admin Product Listing</h1>
+            
+                <nav>
+                    <a href="/admin/admin-upload.html"> Bulk Upload</a>
+                    <a href="/admin/product-edit.html"> Product Edit</a>
+                    <a href="/admin/admin-products.html"> Product List</a>
+                    <a href="" id="signout">Sign Out</a>
+
+                </nav>   
+                <br>
+                <select id="filter">
+                    <option value="All">All</option>
+                    <option value="Bracelets">Bracelets</option>
+                    <option value="Earrings">Earrings</option>
+                    <option value="Necklaces">Necklaces</option>
+                    <option value="Rings">Rings</option>
+                </select>
+                <input type="text" placeholder="Search Catalog">
+                <button id="Search"> Search</button>
+                <button id="add">Add Product</button>
+
+            </div>
+
+        </section>
+
+
+        <section id="products">
+
+            <div id="rings">
+                <span class="item">
+                    <p class="productID"> LH0001 </p>
+                    <img src="/images/ring.png" alt="Diamond Knot Ring" width="100" height="auto"
+                        productID="LH0001"name="Dia Knot Ring" category="Ring" price="75.00"
+                        description="Dia Knot is an expression of love’s unwavering bonds. 
+                        It's a symbol of life’s most enduring ties and meaningful connections. 
+                        Crafted with yellow gold and pavé diamonds, then polished by hand for high shine.
+                        18k yellow gold with round brilliant diamonds. Carat total weight .05">  
+                    
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+                <span class="item">
+                    <p class="productID"> LH0002 </p>
+                    <img src="/images/ring3.png" alt="Leaf Ring" width="100" height="auto"
+                        productID="LH0002"name="Leaf Ring" category="Ring" price="55.00"
+                        description="">
+                
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+                <span class="item">
+                    <p class="productID"> LH0003 </p>
+                    <img src="/images/ring4 (1).png" alt="Love Ring" width="100" height="auto"
+                        productID="LH0003"name="Love Ring" category="Ring" price="60.00"
+                        description="">
+            
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+            </div>
+
+
+            <div id="necklaces">
+                
+                <span class="item">
+                    <p class="productID"> LH0004 </p>
+                    <img src="/images/neck2.png" alt="Large Link Necklace" width="100" height="auto"
+                        productID="LH0004"name="Large Link Necklace" category="Necklace" price="80.00"
+                        description="">
+            
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+                <span class="item">
+                    <p class="productID"> LH0005 </p>
+                    <img src="/images/neck3.png" alt="Pearl Necklace" width="100" height="auto"
+                        productID="LH0005"name="Pearly Perf" category="Necklace" price="85.00"
+                        description="">
+
+                    <br>
+                
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+                <span class="item">
+                    <p class="productID"> LH0006 </p>
+                    <img src="/images/neck4.png" alt="Love Necklace" width="100" width="100" height="auto"
+                        productID="LH0006" name="Love Necklace" category="Necklace" price="60.00"
+                        description="">
+                
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+            </div>
+
+            <div id="earrings">
+                
+                <span class="item">
+                    <p class="productID"> LH0007 </p>
+                    <img src="/images/earring (1).png" alt="Leaf Earrings" width="100" height="auto"
+                        productID="LH0007" name="Leaf Earrings" category="Earrings" price="45.00"
+                        description="">
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+                <span class="item">
+                    <p class="productID"> LH0008 </p>
+                    <img src="/images/earring2 (1).png" alt="High Tide" width="100" height="auto"
+                        productID="LH0008" name="High Tide" category="Earrings" price="55.00"
+                        description="">
+                
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+                <span class="item">
+                    <p class="productID"> LH0009 </p>
+                    <img src="/images/earring4 (1).png" alt="Large Link Earrings" width="100" height="auto"
+                        productID="LH0009" name="Large Links" category="Earrings" price="30.00"
+                        description="">
+                
+                    <br>
+
+                    <!--Admin Action Buttons-->
+                    <button class="edit">Edit</button>
+                    <button class="archive">Archive</button>
+                    <button class="delete">Delete</button>
+                </span>
+
+            </div>
+            
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/**
+    Filename: admin.css
+    Author: Jasmine Butts
+    Date: February 28 2025
+    Description: This CSS file provides shared styling for admin-related pages, including:
+                 - Admin Product Listing Page (admin-products.html)
+                 - Product Edit Page (product-edit.html)
+                 - Admin Upload Page (admin-upload.html)
+                 - General layout, buttons, forms, tables, and responsive design.
+    Notes: Ensure consistency across all admin pages while maintaining accessibility and usability.
+*/
+
+/* Common Styling*/
+body {
+    background-color: #9b4822ab;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: #50200a;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #411604;
+}
+
+nav a {
+    color: #fce8d2fb;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #250d01fb;
+}
+
+/*Bulk Upload*/
+#welcome {
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Product Edit*/
+
+#container1 {
+    display: flex;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #250d01fb;
+    background-color: #50200a59;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#container2 {
+    display: flex;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #250d01fb;
+    background-color: #50200a59;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+}
+
+
+label {
+    font-weight: bold;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+
+div {
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #411604af;
+    border: 1px solid #50200a59;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #614b31fb;
+    color: grey;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3b1707ab;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5a2814;
+}
+
+
+/*admin-product*/
+.logo {
+    margin: auto -50px -50px;
+}
+
+
+#listing-title {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.admin {
+    color: hsl(18, 89%, 4%);
+    align-content: center;
+    margin: auto;
+}
+
+
+.admin input, button {
+    width: fit-content;
+}
+
+
+.admin button {
+    font-size: 11px;
+
+}
+
+
+#add {
+    background-color: #fbd9ae9e;
+    color:#250d01;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+#products {
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+#rings, #necklaces, #earrings {
+    display: flex;
+    justify-items: center;
+    gap: 20px; 
+}
+
+
+.item {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.items p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+.item button {
+    font-size: 10px;
+    background-color: #250d01a4;
+    color:#fff;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+
+.productID {
+    margin-bottom: -10px;
+    font-size: 10px;
+    text-align: center;
+}

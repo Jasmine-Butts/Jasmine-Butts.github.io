@@ -1,0 +1,73 @@
+<!--
+    Filename: product-edit.html
+    Author: Jasmine Butts
+    Date: February 28 2025
+    Description: This HTML page allows admin users to modify product details.
+                 - Provides editable fields for Name, Description, Category, Image Path, and Price.
+                 - Product ID remains non-editable.
+                 - Submits changes via a form.
+                 - Ensures data validation before submission.
+    Notes: Ensure that all inputs are properly validated and that the admin has the required permissions to edit product details.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="product-edit.js" defer></script>
+</head>
+<body>
+    <section id="container1">
+        <header>
+        <h1>Product Edit Page</h1> 
+
+            <nav>
+                <a href="/admin/admin-upload.html"> Bulk Upload</a>
+                <a href="/admin/product-edit.html"> Product Edit</a>
+                <a href="/admin/admin-products.html"> Product List</a>
+                <a href="" id="signout">Sign Out</a>
+            </nav>
+        </header>
+    
+
+        <div id="container2">
+            <form action="" method="POST">
+                <div>
+                    <label for="product_id" id="product_id" value="LH0001">Product ID:</label>
+                    <input type="text" name="product_name" value="product_name" >
+                </div>
+
+                <div>
+                    <label for="description" id="description">Description:</label>
+                    <input type="text" name="description" value="description" required> 
+                </div>
+
+                <div>
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="price" step="0.01" value="99.99" required>
+                </div>
+
+                <div>
+                    <label for="price">Price ($):</label>
+                    <input type="number" id="price" name="category" step="0.01" value="-" required>
+                </div>
+
+                <div>
+                    <label for="product_image">Filename::</label>
+                    <input type="text" id="product_image" name="product_image" value="sample.png" required>
+                </div>
+
+                <button type="submit">Update Product</button>
+            </form>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+</html>
