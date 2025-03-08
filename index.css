@@ -49,7 +49,10 @@ section{
     flex: 1;
 }
 
-
+#lux {
+    margin-top: -65px;
+    margin-bottom: -95px;
+}
 
 
 
