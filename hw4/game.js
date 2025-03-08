@@ -22,14 +22,14 @@ playerImages.forEach(img => {
 function startComputerTurn() {
     let count = 0;
     const shuffleInterval = setInterval(() => {
-        computerImage.src = `/${choices[count % 3]}.PNG`;
+        computerImage.src = `/hw4/images/${choices[count % 3]}.PNG`;
         count++;
     }, 500);
     
     setTimeout(() => {
         clearInterval(shuffleInterval);
         const computerChoice = choices[Math.floor(Math.random() * 3)];
-        computerImage.src = `/${computerChoice}.PNG`;
+        computerImage.src = `/hw4/images/${computerChoice}.PNG`;
         determineWinner(playerChoice, computerChoice);
     }, 3000);
 }
@@ -64,7 +64,7 @@ playAgainButton.addEventListener("click", playAgain);
 
 function playAgain() {
     playerImages.forEach(i => i.style.border = "1px solid");
-    computerImage.src = "/question-mark.PNG";
+    computerImage.src = "/hw4/images/question-mark.PNG";
     resultText.textContent = "RESULTS: ";
     playerChoice = "";
 }
