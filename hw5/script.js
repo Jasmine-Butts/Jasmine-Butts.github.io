@@ -7,14 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // fetch GitHub repositories
     async function fetchRepositories(username) {
         const apiUrl = `https://api.github.com/users/${username}/repos?sort=pushed&per_page=20`;
-        const token = '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';
-
         try {
-            const response = await fetch(apiUrl, {
-                headers: {
-                    Authorization: `token ${token}`
-                }
-            });
+            const response = await fetch(apiUrl);
 
             if (response.status === 404) {
                 gallery.innerHTML = '<p class="error">User not found. Please check the username and try again.</p>';
